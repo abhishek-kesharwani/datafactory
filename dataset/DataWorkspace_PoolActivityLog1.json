@@ -1,0 +1,61 @@
+{
+	"name": "DataWorkspace_PoolActivityLog1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AbhishekWorkspace_PoolActivityLog1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Correlationid",
+				"type": "varchar"
+			},
+			{
+				"name": "Operationname",
+				"type": "varchar"
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "Eventcategory",
+				"type": "varchar"
+			},
+			{
+				"name": "Level",
+				"type": "varchar"
+			},
+			{
+				"name": "Time",
+				"type": "varchar"
+			},
+			{
+				"name": "Subscription",
+				"type": "varchar"
+			},
+			{
+				"name": "EventInitiatedBy",
+				"type": "varchar"
+			},
+			{
+				"name": "ResourceType",
+				"type": "varchar"
+			},
+			{
+				"name": "ResourceGroup",
+				"type": "varchar"
+			},
+			{
+				"name": "Resource",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PoolActivityLog1"
+		}
+	}
+}
